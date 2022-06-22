@@ -11,7 +11,7 @@ export default function Home() {
         height="100px"
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
-      <p class={tw`my-6`}>Here we go in fresh</p>
+      <p class={tw`font-bold my-6`}>Here we go in fresh</p>
 	  <p>The goal is to write things</p>
       <Counter start={3} />
     </div>
