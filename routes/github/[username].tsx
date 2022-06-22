@@ -23,7 +23,7 @@ export const handler: Handlers<User | null> = {
     }
 }
 
-const Page = ({data}: PageProps<User | null>) {
+const Page = ({data}: PageProps<User | null>) => {
     if (!data) { 
         return <h1>User not found</h1>
     } else {
@@ -36,3 +36,5 @@ const Page = ({data}: PageProps<User | null>) {
         )
     }
 }
+
+export default Page
