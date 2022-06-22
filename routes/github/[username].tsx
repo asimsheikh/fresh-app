@@ -1,10 +1,9 @@
 // routes/github/[username].tsx
 
 /** @jsx  h */
-
 import { h } from "preact"
 import { Handlers, PageProps} from "$fresh/server.ts"
-
+import { tw } from "twind";
 interface User {
     login: string
     name: string
@@ -28,8 +27,8 @@ const Page = ({data}: PageProps<User | null>) => {
         return <h1>User not found</h1>
     } else {
         return (
-            <div>
-                <img src={data.avatar_url} width={64} height={64} />
+            <div class={tw`mt-10 flex justify-center items-center flex-col`}>
+                <img class={tw``} src={data.avatar_url} width={64} height={64} />
                 <h1>{data.name}</h1>
                 <p>{data.login}</p>
             </div>
