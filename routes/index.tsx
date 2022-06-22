@@ -13,6 +13,7 @@ export default function Home() {
       />
       <p class={tw`font-bold my-6`}>Here we go in fresh</p>
 	  <p>The goal is to write things</p>
+	  <p>And deploy fast.</p>
       <Counter start={3} />
     </div>
   );
