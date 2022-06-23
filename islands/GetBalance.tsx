@@ -10,7 +10,7 @@ import { ethers } from "https://cdn.ethers.io/lib/ethers-5.1.esm.min.js"
 export default function GetBalance(props) {
   const [balance, setBalance] = useState(0);
   const [account, setAccount] = useState('')
-  const [address, setAddress] = useState('nomadicasim.eth')
+  const [address, setAddress] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const provider = new ethers.providers.InfuraProvider('homestead','a724772d5fb445dc950ba67dd5b11ce4')
 
